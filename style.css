@@ -414,3 +414,158 @@ input:checked ~ .slide{
     margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+    .main {
+        font-size: 1.1rem;
+        margin-top: 80px;
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+
+    .element2 {
+        width: 100px;
+        height: 100px;
+    }
+
+    img {
+        width: 250px;
+    }
+
+    .form h1 {
+        font-size: 30px;
+        margin-top: 100px;
+    }
+
+    input, button {
+        width: 300px;
+        height: 40px;
+    }
+
+    .content3 {
+        margin-top: 300px;
+    }
+
+    .content3 h1 {
+        font-size: 2.5rem;
+    }
+
+    .content3 p {
+        line-height: 30px;
+        font-size: 1.5rem;
+    }
+
+    .slider {
+        flex-direction: column;
+    }
+
+    ul li a {
+        font-size: 16px;
+        height: 45px;
+    }
+
+    .toggle {
+        height: 28px;
+        width: 28px;
+        margin-right: 50px;
+    }
+
+    .toggle .common {
+        height: 1.5px;
+        width: 18px;
+    }
+
+    form {
+        width: 80%;
+    }
+
+    .element2 {
+        box-shadow: -40px 40px 150px red;
+    }
+
+    #login-form input, #login-form button {
+        width: 80%;
+        padding: 8px;
+    }
+
+    .content {
+        margin-top: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        font-size: 1rem;
+        margin-top: 60px;
+    }
+
+    a {
+        font-size: 1.2rem;
+    }
+
+    .element2 {
+        width: 80px;
+        height: 80px;
+    }
+
+    img {
+        width: 200px;
+    }
+
+    .form h1 {
+        font-size: 26px;
+        margin-top: 80px;
+    }
+
+    input, button {
+        width: 250px;
+        height: 35px;
+    }
+
+    .content3 {
+        margin-top: 200px;
+    }
+
+    .content3 h1 {
+        font-size: 2rem;
+    }
+
+    .content3 p {
+        line-height: 25px;
+        font-size: 1.2rem;
+    }
+
+    ul li a {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .toggle {
+        height: 24px;
+        width: 24px;
+        margin-right: 30px;
+    }
+
+    .toggle .common {
+        height: 1.2px;
+        width: 16px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .element2 {
+        box-shadow: -30px 30px 100px red;
+    }
+
+    #login-form input, #login-form button {
+        width: 90%;
+        padding: 6px;
+    }
+
+    .content {
+        margin-top: 150px;
+    }
+}
