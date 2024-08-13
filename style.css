@@ -1,0 +1,416 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #0b1522;
+    height: 100vh;
+}
+
+
+.content{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+    color: white;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    color: white;
+    font-family:'Bodoni Moda', cursive;
+    font-weight: 400;
+    font-size: 1.35rem;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'Bodoni Moda', cursive;
+    font-size: 2rem;
+    color: rgba(255, 182, 193, 0.8);
+    cursor: pointer;
+}
+
+
+.element2{
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    border-radius: 16px;
+    box-shadow: -60px 60px 200px red;
+
+    animation-duration: 0.67s;
+    animation-name: spin;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spin{
+    0%{ transform: scale(1.07);
+
+    }
+    80%{
+         transform: scale(1.0);
+    }
+    100%{
+        transform:
+        scale: 0.8;
+    }
+}
+ img{
+    width: 350px;
+ }
+
+.element2:hover{
+    transform: scale(1.2);
+}
+
+
+.popper-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* Cherry blossom petals styling */
+.confetti {
+    position: absolute;
+    top: -50px; /* Starting slightly above the visible area */
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 182, 193, 0.8);
+    border-radius: 50%;
+    opacity: 0;
+    transform-origin: center center;
+    box-shadow: 2px 2px 5px rgba(255, 182, 193, 0.6);
+    animation: fallStraight 2.6s infinite ease-in-out;
+}
+
+/* Individual petals adjustments */
+.confetti:nth-child(1) { left: 10%; animation-delay: 0s; }
+.confetti:nth-child(2) { left: 20%; animation-delay: 0.4s; }
+.confetti:nth-child(3) { left: 30%; animation-delay: 0.7; }
+.confetti:nth-child(4) { left: 40%; animation-delay: 0.9s; }
+.confetti:nth-child(5) { left: 50%; animation-delay: 1.2; }
+.confetti:nth-child(6) { left: 60%; animation-delay: 1.4s; }
+.confetti:nth-child(7) { left: 70%; animation-delay: 1.5; }
+.confetti:nth-child(8) { left: 80%; animation-delay: 1.6s; }
+.confetti:nth-child(9) { left: 90%; animation-delay: 2.0; }
+.confetti:nth-child(10) { left: 95%; animation-delay: 2.2s; }
+
+/* Animation keyframes for cherry blossom petals falling straight down */
+@keyframes fallStraight {
+    0% {
+        top: -50px;
+        opacity: 1;
+        transform: translateY(0) rotate(0deg) scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(50vh) rotate(180deg) scale(1);
+    }
+    100% {
+        top: 100vh;
+        opacity: 0;
+        transform: translateY(100vh) rotate(360deg) scale(1.2);
+    }
+}
+
+form{
+    font-family: 'Bodoni Moda', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form h1{
+    font-family: 'Bodoni Moda', cursive;
+    text-align: center;
+    font-size: 36px;
+    color:rgba(255, 182, 193, 0.8) ;
+    font-weight: bold;
+    margin-top: 150px;
+}
+
+
+input{
+    width: 400px;
+    height: 50px;
+    border-radius: 14PX;
+    border: none;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+button{
+    margin-top: 50px;
+    width: 400px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    background-color:rgba(255, 182, 193, 0.8);
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+}
+
+button:active{
+    background-color: black;
+    color: white;
+}
+
+.slider{
+    display: flex;
+    color: black;
+}
+
+.content3{
+    margin-top: 400px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 182, 193, 0.8);
+}
+
+.content3 h1{
+    font-family: 'Bodoni Moda', cursive;
+    font-size: 3.5rem;
+    font-weight: bolder;
+}
+
+.content3 p{
+    line-height: 45px;
+    font-family: 'Bodoni Moda', cursive;
+    font-size: 2rem;
+    transition: 0.25s;
+}
+
+.one:hover{
+    transform: scale(1.2);
+}
+
+#login-container {
+    text-align: center;
+    padding: 20px;
+    background-color: powderblue;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-form {
+    margin: 20px 0;
+}
+
+#login-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#login-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-form button {
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-form button:hover{
+    background-color: white;
+    color: rgba(255, 182, 193, 0.8);
+    transform: scale(1.1);
+}
+
+#login-form button:active{
+    background-color: black;
+    color: white;
+}
+
+#error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+#protected-content {
+    text-align: center;
+}
+
+.slide{
+    height: 100%;
+    width: 150px;
+    position: relative;
+    transition: 0.5s ease;
+    transform: translatey(-1100px);
+    background-color: transparent;
+}
+
+.menu{
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    padding-right: 80px;
+    pointer-events: none;
+    padding-right: 0;
+}
+
+ul li{
+    list-style: none;
+
+}
+
+ul{
+    padding-left: 0;
+}
+
+ul li a{
+    color: lightseagreen;
+    font-weight: 500;
+    display: block;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.5s ease-out;
+    height: 55px;
+    font-size: 18px;
+}
+
+ul li a{
+    color: black;
+    background-color: transparent;
+}
+
+ul li a:hover{
+    transform: scale(1.3);
+}
+
+ul li a #homes{
+    padding-top: 5px;
+}
+
+ul li a i{
+    width: 35px;
+    text-align: center;
+    transition: 0.25s ease;  
+}
+
+ul li a i:hover{
+    transform: scale(1.5);
+}
+
+#toggle{
+    display: none;
+    visibility: hidden;
+    -webkit-appearance: none;
+}
+
+.toggle{
+    position: absolute;
+    height: 32px;
+    width: 32px;
+    top: 10px;
+    z-index: 1;
+    right: 15px;
+    margin-right: 100px;
+    background-color: transparent;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: 0.25s ease;
+}
+
+.toggle:hover{
+    transform: scale(1.2);
+}
+
+.toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: rgba(255, 182, 193, 0.8);
+    border-radius: 50px;
+    transition: 0.25s ease;
+}
+
+.toggle .top_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .middle_line{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.toggle .bottom_line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input:checked ~ .toggle .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(45deg);
+}
+
+input:checked ~ .toggle .bottom_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+input:checked ~ .toggle .middle_line{
+    opacity: 0;
+    transform: translateX(20px);
+}
+
+input:checked ~ .slide{
+    transform: translateX(0);
+    box-shadow: 0 0 12px brown;
+}
+
+.headercontent{
+    font-family: 'Bodoni Moda', cursive; 
+    font-size: 2rem;
+    color: rgba(255, 182, 193, 0.8);
+    position: relative;
+    padding-left: 50px;
+    font-weight: lighter;
+    font-style: italic;
+    margin-top: 62px;
+    padding-top: 44px;
+}
+
+.headercontent p{
+    padding-top: 15px;
+}
+
+.firstpara{
+    margin-top: 20px;
+}
+

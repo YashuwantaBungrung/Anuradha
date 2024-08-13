@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+
+    <body style="background: linear-gradient(to bottom, #fff1f1, #ffe4e1);">
+
+        
+
+            <div id="login-container">
+                <form id="login-form">
+                    <label for="password"></label>
+                    <input type="password" id="password" name="password" required placeholder="Password">
+                    <button type="submit">Submit</button>
+                    
+                </form>
+                <p id="error-message"></p>
+            </div>
+
+            <div id="protected-content" style="display: none;">
+                <div class="popper-container">
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+
+    
+
+                    <div class="content3">
+                        <a href="index3.html">
+                            <h1>Click here to open the final door</h1>
+                        </a>
+                        
+                    </div>
+                </div>
+
+
+    </body>
+
+    <script>
+        alert('Enter the key to my heart')
+        document.addEventListener('DOMContentLoaded', function() {
+    const correctPassword = 'ANURADHA'
+    const loginForm = document.getElementById('login-form');
+    const passwordInput = document.getElementById('password');
+    const loginContainer = document.getElementById('login-container');
+    const protectedContent = document.getElementById('protected-content');
+    const errorMessage = document.getElementById('error-message');
+
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const enteredPassword = passwordInput.value;
+
+        if (enteredPassword === correctPassword) {
+            loginContainer.style.display = 'none';
+            protectedContent.style.display = 'block';
+        } else {
+            errorMessage.textContent = 'Incorrect password. Please try again.';
+        }
+    });
+});
+    </script>
+</html>
